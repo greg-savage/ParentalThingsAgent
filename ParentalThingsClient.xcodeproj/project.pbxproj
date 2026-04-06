@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A00020100000000000001 /* ParentalThingsClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A00010100000000000001 /* ParentalThingsClientApp.swift */; };
+		4A00020100000000000002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A00010100000000000002 /* AppDelegate.swift */; };
+		4A00020100000000000003 /* IMessageDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A00010100000000000003 /* IMessageDB.swift */; };
+		4A00020100000000000004 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A00010100000000000004 /* APIClient.swift */; };
+		4A00020100000000000005 /* Poller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A00010100000000000005 /* Poller.swift */; };
+		4A00020100000000000006 /* ConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A00010100000000000006 /* ConfigurationView.swift */; };
+		4A00020100000000000007 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A00010100000000000007 /* StatusView.swift */; };
+		4A00020100000000000008 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A00010100000000000009 /* libsqlite3.tbd */; };
+		4A0002010000000000000A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A0001010000000000000A /* Assets.xcassets */; };
+		4A0002010000000000000B /* DatabaseWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0001010000000000000B /* DatabaseWatcher.swift */; };
+		4A0002010000000000000C /* ContactResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0001010000000000000C /* ContactResolver.swift */; };
+		4A0002010000000000000E /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0001010000000000000E /* LogView.swift */; };
+		4A00020100000000000010 /* NotesDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A00010100000000000010 /* NotesDB.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4A00010100000000000001 /* ParentalThingsClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentalThingsClientApp.swift; sourceTree = "<group>"; };
+		4A00010100000000000002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A00010100000000000003 /* IMessageDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMessageDB.swift; sourceTree = "<group>"; };
+		4A00010100000000000004 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		4A00010100000000000005 /* Poller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poller.swift; sourceTree = "<group>"; };
+		4A00010100000000000006 /* ConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationView.swift; sourceTree = "<group>"; };
+		4A00010100000000000007 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		4A00010100000000000008 /* ParentalThingsClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParentalThingsClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A00010100000000000009 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		4A0001010000000000000A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A0001010000000000000B /* DatabaseWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseWatcher.swift; sourceTree = "<group>"; };
+		4A0001010000000000000C /* ContactResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactResolver.swift; sourceTree = "<group>"; };
+		4A0001010000000000000D /* ParentalThingsClient.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ParentalThingsClient.entitlements; sourceTree = "<group>"; };
+		4A0001010000000000000E /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
+		4A0001010000000000000F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A00010100000000000010 /* NotesDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDB.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A00040100000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A00020100000000000008 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A00030100000000000001 = {
+			isa = PBXGroup;
+			children = (
+				4A00030100000000000002 /* ParentalThingsClient */,
+				4A00030100000000000003 /* Products */,
+				4A00030100000000000004 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4A00030100000000000002 /* ParentalThingsClient */ = {
+			isa = PBXGroup;
+			children = (
+				4A00010100000000000001 /* ParentalThingsClientApp.swift */,
+				4A00010100000000000002 /* AppDelegate.swift */,
+				4A00010100000000000003 /* IMessageDB.swift */,
+				4A00010100000000000010 /* NotesDB.swift */,
+				4A00010100000000000004 /* APIClient.swift */,
+				4A00010100000000000005 /* Poller.swift */,
+				4A0001010000000000000B /* DatabaseWatcher.swift */,
+				4A0001010000000000000C /* ContactResolver.swift */,
+				4A00010100000000000006 /* ConfigurationView.swift */,
+				4A00010100000000000007 /* StatusView.swift */,
+				4A0001010000000000000E /* LogView.swift */,
+				4A0001010000000000000A /* Assets.xcassets */,
+				4A0001010000000000000D /* ParentalThingsClient.entitlements */,
+				4A0001010000000000000F /* Info.plist */,
+			);
+			path = ParentalThingsClient;
+			sourceTree = "<group>";
+		};
+		4A00030100000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A00010100000000000008 /* ParentalThingsClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A00030100000000000004 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A00010100000000000009 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A00050100000000000001 /* ParentalThingsClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A00080100000000000002 /* Build configuration list for PBXNativeTarget "ParentalThingsClient" */;
+			buildPhases = (
+				4A00040100000000000001 /* Sources */,
+				4A00040100000000000002 /* Frameworks */,
+				4A00040100000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParentalThingsClient;
+			productName = ParentalThingsClient;
+			productReference = 4A00010100000000000008 /* ParentalThingsClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A00060100000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					4A00050100000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 4A00080100000000000001 /* Build configuration list for PBXProject "ParentalThingsClient" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A00030100000000000001;
+			productRefGroup = 4A00030100000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A00050100000000000001 /* ParentalThingsClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A00040100000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A0002010000000000000A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A00040100000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A00020100000000000001 /* ParentalThingsClientApp.swift in Sources */,
+				4A00020100000000000002 /* AppDelegate.swift in Sources */,
+				4A00020100000000000003 /* IMessageDB.swift in Sources */,
+				4A00020100000000000010 /* NotesDB.swift in Sources */,
+				4A00020100000000000004 /* APIClient.swift in Sources */,
+				4A00020100000000000005 /* Poller.swift in Sources */,
+				4A00020100000000000006 /* ConfigurationView.swift in Sources */,
+				4A00020100000000000007 /* StatusView.swift in Sources */,
+				4A0002010000000000000B /* DatabaseWatcher.swift in Sources */,
+				4A0002010000000000000C /* ContactResolver.swift in Sources */,
+				4A0002010000000000000E /* LogView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4A00070100000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 94Y2VFWFK4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4A00070100000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 94Y2VFWFK4;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		4A00070100000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ParentalThingsClient/ParentalThingsClient.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ParentalThingsClient/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "ParentalThings Client";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSContactsUsageDescription = "ParentalThings uses your contacts to identify message senders.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.55.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.parentalthings.client;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4A00070100000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ParentalThingsClient/ParentalThingsClient.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ParentalThingsClient/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "ParentalThings Client";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSContactsUsageDescription = "ParentalThings uses your contacts to identify message senders.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.55.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.parentalthings.client;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A00080100000000000001 /* Build configuration list for PBXProject "ParentalThingsClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A00070100000000000001 /* Debug */,
+				4A00070100000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A00080100000000000002 /* Build configuration list for PBXNativeTarget "ParentalThingsClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A00070100000000000003 /* Debug */,
+				4A00070100000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A00060100000000000001 /* Project object */;
+}

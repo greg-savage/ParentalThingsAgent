@@ -1,0 +1,13 @@
+{
+  "images" : [
+    {
+      "filename" : "AppIcon~ios-marketing.png",
+      "idiom" : "mac",
+      "size" : "1024x1024"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
