@@ -8,12 +8,7 @@ struct ParentalThingsClientApp: App {
         MenuBarExtra {
             StatusView(poller: appDelegate.poller)
         } label: {
-            let count = appDelegate.poller.unreviewedCount
-            if count > 0 {
-                Label("\(count)", image: "MenuBarIcon")
-            } else {
-                Image("MenuBarIcon")
-            }
+            MenuBarLabel(poller: appDelegate.poller)
         }
         .menuBarExtraStyle(.window)
 
@@ -27,5 +22,27 @@ struct ParentalThingsClientApp: App {
             LogView(poller: appDelegate.poller)
         }
         .defaultSize(width: 600, height: 400)
+    }
+}
+
+private struct MenuBarLabel: View {
+    let poller: Poller
+    @Environment(\.openWindow) private var openWindow
+    @AppStorage("serverURL") private var serverURL = ""
+    @AppStorage("apiKey") private var apiKey = ""
+
+    var body: some View {
+        Group {
+            if poller.unreviewedCount > 0 {
+                Label("\(poller.unreviewedCount)", image: "MenuBarIcon")
+            } else {
+                Image("MenuBarIcon")
+            }
+        }
+        .onAppear {
+            if serverURL.isEmpty || apiKey.isEmpty {
+                openWindow(id: "configuration")
+            }
+        }
     }
 }
